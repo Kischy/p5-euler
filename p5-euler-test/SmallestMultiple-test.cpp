@@ -25,3 +25,11 @@ TEST_F(SmallestMultipleTestClass, NumbersThatAreDevisable)
 	ASSERT_EQ(smallestmultiple.is_divisable(10, 5), true);
 	ASSERT_EQ(smallestmultiple.is_divisable(0, 5), true);
 }
+
+
+TEST_F(SmallestMultipleTestClass, SmallestMultipleBetweenValues)
+{
+	ASSERT_EQ(smallestmultiple.get_smallest_even_multiple_between(1,10), 2520);
+}
+
+
