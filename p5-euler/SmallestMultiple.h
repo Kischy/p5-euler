@@ -5,7 +5,7 @@ class SmallestMultiple
 {
 public:
 	
-	bool is_divisable(unsigned long long number, unsigned long long divisor)
+	bool is_divisable(unsigned long long number, unsigned long long divisor) const
 	{
 		return (number % divisor) == 0;
 	}
@@ -14,7 +14,7 @@ public:
 
 
 	unsigned long long get_smallest_multiple_between(unsigned long long start,
-		unsigned long long end)
+		unsigned long long end) const
 	{
 
 		unsigned long long result = 1;
@@ -31,7 +31,7 @@ public:
 
 	bool is_number_multiple(unsigned long long number, 
 		unsigned long long start,
-		unsigned long long end)
+		unsigned long long end) const
 	{
 		for (unsigned long long i = start; i <= end;i++)
 		{
